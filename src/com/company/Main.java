@@ -10,7 +10,9 @@ public class Main {
         //We want to find if a number is even or odd
         //We want to keep a number contained
 
-        keepContained();
+        //keepContained();
+        //testOddness();
+        lastDigit();
     }
 
     public static void testOddness() {
@@ -31,5 +33,14 @@ public class Main {
         int number = Keyboard.nextInt();
 
         System.out.println("number contained is: " + ((number%8)+5));
+    }
+
+    public static void lastDigit() {
+        Scanner Keyboard;
+        System.out.println("Type a Positive Number Bigger Than 1,000");
+        Keyboard = new Scanner(System.in);
+        int number = Keyboard.nextInt();
+        System.out.println("The last digit of the number is: " + number%10);
+
     }
 }
