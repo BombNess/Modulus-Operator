@@ -8,7 +8,9 @@ public class Main {
         //todo keep number contained
         //todo get the last digit
         //We want to find if a number is even or odd
-        testOddness();
+        //We want to keep a number contained
+
+        keepContained();
     }
 
     public static void testOddness() {
@@ -20,5 +22,14 @@ public class Main {
         System.out.println("Number is odd: " + (number % 2 !=0));
 
 
+    }
+
+    public static void keepContained() {
+        Scanner Keyboard;
+        Keyboard = new Scanner(System.in);
+        System.out.println("Type a Positive Number");
+        int number = Keyboard.nextInt();
+
+        System.out.println("number contained is: " + ((number%8)+5));
     }
 }
